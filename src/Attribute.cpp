@@ -17,7 +17,7 @@ void Attribute::addDomain(vector<string> domain) {
     this->domain = domain;
 }
 
-void Attribute::getDomainSize() {
+int Attribute::getDomainSize() {
     return domain.size();
 }
 
