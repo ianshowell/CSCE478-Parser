@@ -20,6 +20,7 @@ private:
 public:
     Attribute(int type);
     void addDomain(vector<string> domain);
+    int getDomainSize();
     float compare(Instance* a, Instance* b);
     bool isNumeric();
     int getType();

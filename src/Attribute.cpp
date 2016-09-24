@@ -17,6 +17,10 @@ void Attribute::addDomain(vector<string> domain) {
     this->domain = domain;
 }
 
+void Attribute::getDomainSize() {
+    return domain.size();
+}
+
 float Attribute::compare(Instance* a, Instance* b) {
     if(type == 1 || type == 3) {
         return a->getNumValue() - b->getNumValue();
