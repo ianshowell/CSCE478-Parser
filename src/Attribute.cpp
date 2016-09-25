@@ -42,7 +42,7 @@ int Attribute::getIndexInDomain(string value) {
         cout << "Error: Attribute accessed is not domain based" << endl;
     }
     for (int i = 0; i < domain.size(); i++){
-        if(value.compare(domain[i])) {
+        if(!value.compare(domain[i])) {
             return i;
         }
     }
